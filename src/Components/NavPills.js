@@ -1,5 +1,6 @@
 import React from 'react';
 import {useDispatch,useSelector} from 'react-redux';
+import { CHOSE_TAB_NAME } from '../redux/Constants/Contants';
 import TabPanes from './TabPanes'; 
 
 export default function NavPills(props) {
@@ -8,7 +9,7 @@ export default function NavPills(props) {
 
     const tabNameChosen = (typeName) =>{
         let action = {
-            type: "CHOSE_TAB_NAME", 
+            type: CHOSE_TAB_NAME, 
             typeName
         };
         dispatch(action); 

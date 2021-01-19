@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { TRY_CLOTHES } from '../redux/Constants/Contants';
 
 export default function TabPanes(props) {
     const tabPanes = useSelector(state => state.dressingReducer.tabPaneArrayChosens);
@@ -7,7 +8,7 @@ export default function TabPanes(props) {
     let dispatch = useDispatch();
     const tryClothes = (tabPane) => {
         let action = {
-            type: "TRY_CLOTHES",
+            type: TRY_CLOTHES,
             tabPane
         };
 

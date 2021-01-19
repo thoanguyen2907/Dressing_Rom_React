@@ -1,3 +1,4 @@
+import { CHOSE_TAB_NAME, TRY_CLOTHES } from '../Constants/Contants';
 import data from './../../data/Data.json';
 const initialDefault = {
     navPills: data.navPills,
@@ -58,11 +59,11 @@ const dressingReducerLifeCycle = (state = initialDefault, action) => {
     let listChosenUpdate; 
     switch (action.type) {
 
-        case "CHOSE_TAB_NAME":
+        case CHOSE_TAB_NAME:
             let typeChosen = action.typeName;
             state.tabPaneArrayChosens = state.tabPanes.filter(item => item.type === typeChosen);      
             return { ...state };
-        case "TRY_CLOTHES": 
+        case TRY_CLOTHES: 
             let chosenItem =  action.tabPane;
             listChosenUpdate = [...state.listChosens];         
             index = state.listChosens.findIndex(item => item.type === chosenItem.type); 
