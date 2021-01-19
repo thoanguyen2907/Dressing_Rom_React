@@ -4,7 +4,7 @@ Choose item and dispatch action to store, render item to UI.
 
 Here is the illustration : 
 
-https://media.giphy.com/media/ZlMEZRVeqNhsebJXus/giphy.gif
+![github] (https://media.giphy.com/media/ZlMEZRVeqNhsebJXus/giphy.gif)
 
 
 
