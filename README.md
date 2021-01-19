@@ -2,9 +2,13 @@
 This Trying Clothes for Model  project created by React and Redux. 
 Choose item and dispatch action to store, render item to UI. 
 
-Here is the demo : 
+Here is the illustration : 
 
 https://media.giphy.com/media/ZlMEZRVeqNhsebJXus/giphy.gif
+
+
+
+
 
 
 
